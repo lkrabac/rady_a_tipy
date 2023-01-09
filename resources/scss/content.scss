@@ -1,0 +1,61 @@
+.content {
+
+    .content_posts {
+
+        padding-left: 15px;
+        padding-top: 15px;
+
+        .flex-posts {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .margin_class {
+            margin-bottom: 15px;
+        }
+
+        .post_card_main {
+
+            padding: 0px;
+
+            .img {
+
+                width: 100%;
+                object-fit: cover;
+
+            }
+
+            .meta {
+
+                margin-top: 7px;
+
+                h2 {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 18px;
+
+                    color: #5D3E1D;
+                }
+
+                a {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 24px;
+
+                    margin: 0px;
+
+                    color: #000000;
+                    text-decoration: none;
+                }
+
+            }
+
+        }
+
+    }
+
+}

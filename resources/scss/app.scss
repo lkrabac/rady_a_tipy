@@ -1,0 +1,118 @@
+:root {
+    --background: #F2EEE5;
+
+    --primary: #5D3E1D;
+
+    --secondary: #689775;
+    --third: #A33327;
+    --heading--color: #5D3E1D;
+    --heading--color--dim: #774f24;
+    --text--color: #000000;
+    --color--add1: #917164;
+    --color--add2: #AD8174;
+    --post--color: #BFD8D2;
+}
+
+.sidebar {
+    background-color: #ffffff;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25));
+    margin-right: 20px;
+    @media (max-width: 768px) {
+        margin-right: 0px;
+    }
+}
+
+.content {
+    background-color: #ffffff;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25));
+}
+
+.addon {
+    margin-top: 15px;
+
+    background-color: #ffffff;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25));
+}
+
+body {
+   font-family: 'Inter', Helvetica,Arial,sans-serif;
+   background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading--color);
+    font-weight: 700;
+}
+
+p {
+    color: var(--text--color);
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 94px);
+}
+
+a {
+    transition: all 0.19s ease-in;
+    color: var(--heading--color--dim);
+    font-weight: 400;
+}
+
+a:hover {
+    color: var(--heading--color);
+}
+
+.header-main {
+    .menu {
+        list-style: none;
+        display: flex;
+        gap: 12px;
+        .menu-item {
+            transition: all 0.128s ease-in;
+
+            .menu-item-link {
+                text-transform: uppercase;
+                color: rgba($color: #ffffff, $alpha: 0.5);
+                transition: all 0.180s ease-in-out;
+            }
+            .menu-item-link:hover {
+                color: rgba($color: #ffffff, $alpha: 1);
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+.hero {
+    padding: 1.5rem 0 6rem 0;
+
+    .item-div {
+        display: inline-block;
+        .item-links {
+            font-size: clamp(12px, 1.5vw, 50px);
+            a {
+                transition: all 0.3s ease-in-out;
+                color: var(--secondary);
+            }
+            a:hover {
+                color: var(--heading--color);
+            }
+        }
+    }
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    p {
+        text-align: start;
+        padding: 0.5em 0.5em 0.5em 0;
+    }
+}
+
+
+
+.add-comment-form {
+    border-bottom: 7px dotted black;
+}
